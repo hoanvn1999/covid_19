@@ -1,0 +1,73 @@
+<div class="banner header-text">
+  <div class="owl-banner owl-carousel">
+    <div class="banner-item-01">
+      <div class="row text-content">
+        <div class="col-12 mb-5 text-center">
+          <h1>Tình hình covid trên thế giới</h1>
+        </div>
+        <div class="col-md-4 col-sm-2">
+          <h4>Xác nhận</h4>
+          <h2><%= @confirmed %></h2>
+        </div>
+        <div class="col-md-4 col-sm-2">
+          <h4>Phục hồi</h4>
+          <h2><%= @recovered %></h2>
+        </div>
+        <div class="col-md-4 col-sm-2">
+          <h4>Tử vong</h4>
+          <h2><%= @death %></h2>
+        </div>
+      </div>
+    </div>
+    <div class="banner-item-03">
+      <div class="text-content">
+        <h3 class="mb-5">Viêt Nam</h3>
+        <h4>Áp dụng các chỉ thị 15,16 đối với các vùng dịch: Đà Nẵng, Hà Nội</h4>
+        <h4>Áp dụng cách ly 21 ngày người về từ các nước có dich...</h4>
+      </div>
+    </div>
+    <div class="banner-item-02">
+      <div class="text-content">
+        <h3 class="mb-5">Các nghiên cứu mới & các biện pháp phòng chống</h3>
+        <h4>1.Truyền thông rủi ro và sự tham gia của cộng đồng</h4>
+        <h4>2. Hướng dẫn cho trường học, tổ chức</h4>
+        <h4>3. Sự chuẩn bị, các hành động sẵn sàng ứng phó Covid 19</h4>
+        <h4>4. Điều phối giám sát cấp quốc gia</h4>
+        <h4>4. Điều phối giám sát cấp quốc gia</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="latest-posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>Tin tức</h2>
+          <a href="#">Xem tất cả bài đăng <i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <% 6.times do |n| %>
+        <div class="col-md-4">
+          <div class="product-item">
+            <a href="#"><%= image_tag "covid.png" %></a>
+            <div class="down-content">
+              <a href="#"><h4>Tiêu đề</h4></a>
+              <h6>Đọc thêm</h6>
+              <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur...</p>
+              <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <span>Reviews (24)</span>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

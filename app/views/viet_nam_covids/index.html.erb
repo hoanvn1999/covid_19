@@ -1,0 +1,57 @@
+<div class="container" style="padding-top: 100px">
+  <div class="text-center mb-4">
+    <h1>Tình hình covid tại Việt Nam</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-sm-2">
+      <div class="text-content">
+        <h4 class="text-primary">Xác nhận</h4>
+        <h2><%= @confirmed %></h2>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-2">
+      <div class="text-content">
+        <h4 class="text-success">Phục hồi</h4>
+        <h2><%= @recovered %></h2>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-2">
+      <div class="text-content">
+        <h4 class="text-danger">Tử vong</h4>
+        <h2><%= @death %></h2>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-2">
+      <div class="text-content">
+        <h4 class="text-info">Tỉ lệ tử vong</h4>
+        <h2><%= (@death/@confirmed).to_f*100000 %>%</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="padding-top: 100px">
+  <div class="text-center mb-4">
+    <h1>Tiêm chủng vaccines tại Việt Nam</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-2 mx-auto">
+      <div class="text-content">
+        <h4 class="text-primary">Đang quản lý</h4>
+        <h2><%= @administered %></h2>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-2 mx-auto">
+      <div class="text-content">
+        <h4 class="text-success">Đã được tiêm</h4>
+        <h2><%= @people_vaccinated %></h2>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-2 mx-auto">
+      <div class="text-content">
+        <h4 class="text-danger">Tiêm đợt 1</h4>
+        <h2><%= @people_partially_vaccinated %></h2>
+      </div>
+    </div>
+  </div>
+</div>

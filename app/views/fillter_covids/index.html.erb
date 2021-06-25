@@ -1,0 +1,33 @@
+<div class="text-center" style="padding-top: 100px">
+  <%= form_tag fillter_path, method: :get, class: "input-group justify-content-center mb-3" do %>
+    <div class="form-outline">
+      <%= text_field_tag :country, "", class:"form-control email-w", value: params[:country], placeholder: "Nhập tên quốc gia", required: true %>
+    </div>
+    <%= submit_tag "Tìm kiếm", class:"btn btn-success" %>
+  <% end %>
+</div>
+<div class="container">
+  <div class="text-center mb-4">
+    <h1>Tình hình covid</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-2">
+      <div class="text-content">
+        <h4 class="text-primary">Xác nhận</h4>
+        <h2><%= @confirmed %></h2>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-2">
+      <div class="text-content">
+        <h4 class="text-success">Phục hồi</h4>
+        <h2><%= @recovered %></h2>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-2">
+      <div class="text-content">
+        <h4 class="text-danger">Tử vong</h4>
+        <h2><%= @death %></h2>
+      </div>
+    </div>
+  </div>
+</div>
